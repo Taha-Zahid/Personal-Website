@@ -446,8 +446,8 @@ nav .right a span {
   }
 
   .hero-section .headshot img {
-    width: 470px;
-    height: 380px;
+    width: 360px;
+    height: 310px;
   }
 
   /* Section 2: Skills */
@@ -455,11 +455,25 @@ nav .right a span {
     padding: 0 20px;
   }
 
+  .skills-section .text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .skills-section .cells .cell span {
     font-size: 16px;
   }
 
   /* Section 3 Project*/
+
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .project-circle {
     width: 200px;
