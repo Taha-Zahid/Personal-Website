@@ -74,6 +74,23 @@ nav .right a span {
   margin-left: 5px;
 }
 
+/* Hover effects */
+nav .right a:hover {
+  color: #4a76ee;
+  transition: color 0.3s ease;
+}
+
+nav .right a:last-child:hover {
+  color: var(--background-color);
+  background-color: #4a76ee;
+  transition: background-color 0.3s ease;
+}
+
+nav .left a:hover {
+  color: #4a76ee;
+  transition: color 0.3s ease;
+}
+
 /* Section 1: Hero */
 .hero-section {
   display: flex;
