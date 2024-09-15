@@ -476,6 +476,7 @@ nav .right a span {
   }
 
   .project-circle {
+    /*Change*/
     width: 200px;
     height: 200px;
   }
