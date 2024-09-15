@@ -1,0 +1,478 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: white;
+}
+
+.logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Keep aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center it horizontally */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  max-width: 1900px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  align-items: center;
+
+  position: fixed; /* Makes the navbar fixed at the top */
+  top: 0; /* Aligns it at the top */
+  width: 100%; /* Ensures it stretches across the full width of the page */
+  background-color: var(
+    --background-color
+  ); /* Keeps the background consistent */
+  z-index: 1000; /* Keeps it above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* Section 1: Hero */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .text h2 {
+  font-size: 45px;
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 500px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+/* Section 2: Skills */
+
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* Section 3: Projects */
+
+.project-section {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 50px;
+}
+
+.project-section h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.project-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-section .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-cell {
+  text-align: center;
+}
+
+.project-circle {
+  width: 250px; /* Reduced size for better responsiveness */
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: White;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-circle:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-description {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: bottom 0.3s ease;
+}
+
+.project-circle:hover .project-description {
+  display: block;
+  bottom: 0;
+}
+
+/* project pages styling */
+
+.project-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-details h2 {
+  font-size: 28px;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.project-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Add space below the paragraph */
+  text-align: left; /* Align text to the left for consistency */
+  max-width: 800px; /* Optional: Set a max-width for better readability */
+  margin: 0 auto; /* Center the text block */
+}
+
+.project-details ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  text-align: left; /* Align list items to the left */
+  margin: 0 auto; /* Center the list */
+  max-width: 800px; /* Optional: Set a max-width for better readability */
+  padding-top: 10px;
+}
+
+.project-details li {
+  font-size: 16px;
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 20px; /* Add space above the link */
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: none;
+  border: 2px solid var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.github-link:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.readme-link {
+  color: #003366; /* Dark blue color */
+  font-size: 18px; /* Adjust as needed */
+  font-family: "Mate", sans-serif; /* Simple and clean font */
+  font-weight: 400;
+  font-style: italic;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the text */
+  margin-bottom: 40px; /* Space below the text */
+}
+
+/* Section 4: Contact */
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #eeeff1;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive/Media Section */
+
+@media (max-width: 850px) {
+  /*Section 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+
+  /* Section 3: Projects */
+
+  .project-section .project-cells {
+    flex-direction: column;
+    padding: 0 190px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-section .project-cells .cell {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  /*Section 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 470px;
+    height: 380px;
+  }
+
+  /* Section 4: Contact */
+
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /*Navbar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* Section 1: Hero */
+
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  .hero-section .headshot img {
+    width: 470px;
+    height: 380px;
+  }
+
+  /* Section 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* Section 3 Project*/
+
+  .project-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-section h2 {
+    font-size: 30px;
+  }
+
+  /* Section 4: Contact */
+
+  .contact-section {
+    padding: 0 20px;
+  }
+}
