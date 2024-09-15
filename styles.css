@@ -76,20 +76,19 @@ nav .right a span {
 
 /* Hover effects */
 nav .right a:hover {
-  color: #4a76ee; 
-  transition: color 0.3s ease; 
-
-
-nav .right a:last-child:hover {
-  color: var(--background-color); 
-  background-color: #4a76ee; 
-  transition: background-color 0.3s ease; 
+  color: #4a76ee;
+  transition: color 0.3s ease;
 }
 
+nav .right a:last-child:hover {
+  color: var(--background-color);
+  background-color: #4a76ee;
+  transition: background-color 0.3s ease;
+}
 
 nav .left a:hover {
-  color: #4a76ee; 
-  transition: color 0.3s ease; 
+  color: #4a76ee;
+  transition: color 0.3s ease;
 }
 
 /* Section 1: Hero */
