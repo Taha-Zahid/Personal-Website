@@ -340,7 +340,7 @@ nav .left a:hover {
 
 .readme-link {
   color: #003366;
-  /font-size: 18px;
+  font-size: 18px;
   font-family: "Mate", sans-serif;
   font-weight: 400;
   font-style: italic;
