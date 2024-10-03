@@ -449,11 +449,12 @@ nav .left a:hover {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    box-sizing: border-box;
   }
 
   /*Navbar */
   nav {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   nav .right a {
@@ -473,7 +474,7 @@ nav .left a:hover {
   /* Section 1: Hero */
 
   .hero-section {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .hero-section .text h2 {
@@ -481,13 +482,13 @@ nav .left a:hover {
   }
 
   .hero-section .headshot img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
   }
 
   /* Section 2: Skills */
   .skills-section {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .skills-section .text p {
@@ -508,6 +509,7 @@ nav .left a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
   }
 
   .project-circle {
@@ -523,6 +525,6 @@ nav .left a:hover {
   /* Section 4: Contact */
 
   .contact-section {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
